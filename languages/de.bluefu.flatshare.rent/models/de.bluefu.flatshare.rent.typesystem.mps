@@ -8,6 +8,7 @@
   <imports>
     <import index="lh0k" ref="r:1ce11698-71a6-461f-9900-a7b29cea8951(de.bluefu.rent.structure)" />
     <import index="k2g3" ref="r:f352e064-40c3-4e6a-a28e-5c083885ba65(de.bluefu.rent.behavior)" />
+    <import index="iqu7" ref="r:0f1369b8-a8b7-4a36-b679-d0023844a4d3(de.bluefu.flatshare.flatmate.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -314,7 +315,7 @@
             <node concept="3cpWsn" id="PHhY41fGHR" role="3cpWs9">
               <property role="TrG5h" value="currentFlatmate" />
               <node concept="3Tqbb2" id="PHhY41fGHK" role="1tU5fm">
-                <ref role="ehGHo" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+                <ref role="ehGHo" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
               </node>
               <node concept="2OqwBi" id="PHhY41fGHS" role="33vP2m">
                 <node concept="2GrUjf" id="PHhY41fGHT" role="2Oq$k0">

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="iqu7" ref="r:0f1369b8-a8b7-4a36-b679-d0023844a4d3(de.bluefu.flatshare.flatmate.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -183,12 +184,10 @@
       <property role="20kJfa" value="flat" />
       <ref role="20lvS9" node="3Wea0iDedki" resolve="FlatSpecification" />
     </node>
-    <node concept="1TJgyj" id="3Wea0iDhXIZ" role="1TKVEi">
-      <property role="IQ2ns" value="4543613074548448191" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
+    <node concept="1TJgyj" id="24UESXRGQIp" role="1TKVEi">
+      <property role="IQ2ns" value="2394414784577760153" />
       <property role="20kJfa" value="flatmates" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3Wea0iDhXIi" resolve="Flatmate" />
+      <ref role="20lvS9" to="iqu7:24UESXRAMSa" resolve="FlatmateSpecification" />
     </node>
     <node concept="1TJgyj" id="3Wea0iDl0bH" role="1TKVEi">
       <property role="IQ2ns" value="4543613074549244653" />
@@ -210,15 +209,6 @@
       <property role="20kJfa" value="rentCalculations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3Wea0iD$mv3" resolve="SingleRentCalculation" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3Wea0iDhXIi">
-    <property role="EcuMT" value="4543613074548448146" />
-    <property role="TrG5h" value="Flatmate" />
-    <property role="3GE5qa" value="rent spec" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Wea0iDhXIj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Wea0iDikPf">
@@ -246,7 +236,7 @@
       <property role="IQ2ns" value="4543613074549179880" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20kJfa" value="flatmate" />
-      <ref role="20lvS9" node="3Wea0iDhXIi" resolve="Flatmate" />
+      <ref role="20lvS9" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
     </node>
     <node concept="1TJgyj" id="3Wea0iDkKnF" role="1TKVEi">
       <property role="IQ2ns" value="4543613074549179883" />
@@ -279,7 +269,7 @@
       <property role="IQ2ns" value="4543613074553268164" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20kJfa" value="flatmate" />
-      <ref role="20lvS9" node="3Wea0iDhXIi" resolve="Flatmate" />
+      <ref role="20lvS9" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
     </node>
     <node concept="1TJgyj" id="3Wea0iD$mvt" role="1TKVEi">
       <property role="IQ2ns" value="4543613074553268189" />

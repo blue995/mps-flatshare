@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.common/de.bluefu.flatshare.common.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.flatmate/de.bluefu.flatshare.flatmate.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.rent/de.bluefu.flatshare.rent.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.bluefu.flatshare.build/de.bluefu.flatshare.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.bluefu.flatshare.runtime/de.bluefu.flatshare.runtime.msd" folder="" />

@@ -8,6 +8,8 @@
   <imports>
     <import index="lh0k" ref="r:1ce11698-71a6-461f-9900-a7b29cea8951(de.bluefu.rent.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="iqu7" ref="r:0f1369b8-a8b7-4a36-b679-d0023844a4d3(de.bluefu.flatshare.flatmate.structure)" />
+    <import index="k2g3" ref="r:f352e064-40c3-4e6a-a28e-5c083885ba65(de.bluefu.flatshare.rent.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -123,6 +125,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -216,15 +219,17 @@
           <node concept="3cpWs8" id="3Wea0iDkMxT" role="3cqZAp">
             <node concept="3cpWsn" id="3Wea0iDkMxW" role="3cpWs9">
               <property role="TrG5h" value="allFlatmates" />
-              <node concept="2I9FWS" id="3Wea0iDkMxR" role="1tU5fm">
-                <ref role="2I9WkF" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+              <node concept="A3Dl8" id="24UESXRCqym" role="1tU5fm">
+                <node concept="3Tqbb2" id="24UESXRCrnY" role="A3Ik2">
+                  <ref role="ehGHo" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
+                </node>
               </node>
-              <node concept="2OqwBi" id="3Wea0iDkN4i" role="33vP2m">
-                <node concept="37vLTw" id="3Wea0iDkMQS" role="2Oq$k0">
+              <node concept="2OqwBi" id="24UESXRDLAk" role="33vP2m">
+                <node concept="37vLTw" id="24UESXRDLbW" role="2Oq$k0">
                   <ref role="3cqZAo" node="3Wea0iDkMbD" resolve="rentSpec" />
                 </node>
-                <node concept="3Tsc0h" id="3Wea0iDkOpd" role="2OqNvi">
-                  <ref role="3TtcxE" to="lh0k:3Wea0iDhXIZ" resolve="flatmates" />
+                <node concept="2qgKlT" id="24UESXRDM1r" role="2OqNvi">
+                  <ref role="37wK5l" to="k2g3:24UESXRDIEG" resolve="getFlatmates" />
                 </node>
               </node>
             </node>
@@ -236,7 +241,7 @@
               <property role="TrG5h" value="selectedFlatmates" />
               <node concept="A3Dl8" id="3Wea0iDmZrT" role="1tU5fm">
                 <node concept="3Tqbb2" id="3Wea0iDmZrW" role="A3Ik2">
-                  <ref role="ehGHo" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+                  <ref role="ehGHo" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
                 </node>
               </node>
               <node concept="2OqwBi" id="3Wea0iDmZs1" role="33vP2m">
@@ -275,12 +280,12 @@
             <node concept="3cpWsn" id="3Wea0iDn0IK" role="3cpWs9">
               <property role="TrG5h" value="availableFlatmates" />
               <node concept="2I9FWS" id="3Wea0iDn0IF" role="1tU5fm">
-                <ref role="2I9WkF" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+                <ref role="2I9WkF" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
               </node>
               <node concept="2ShNRf" id="3Wea0iDn1AQ" role="33vP2m">
                 <node concept="2T8Vx0" id="3Wea0iDn1AO" role="2ShVmc">
                   <node concept="2I9FWS" id="3Wea0iDn1AP" role="2T96Bj">
-                    <ref role="2I9WkF" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+                    <ref role="2I9WkF" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
                   </node>
                 </node>
               </node>
@@ -302,7 +307,7 @@
                     <node concept="3cpWsn" id="3Wea0iDorBX" role="3cpWs9">
                       <property role="TrG5h" value="contextNodeFlatmate" />
                       <node concept="3Tqbb2" id="3Wea0iDorBT" role="1tU5fm">
-                        <ref role="ehGHo" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+                        <ref role="ehGHo" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
                       </node>
                       <node concept="2OqwBi" id="3Wea0iDorBY" role="33vP2m">
                         <node concept="Jnkvi" id="3Wea0iDorBZ" role="2Oq$k0">
@@ -390,7 +395,7 @@
                     <node concept="37vLTG" id="3Wea0iDkPPi" role="3clF46">
                       <property role="TrG5h" value="child" />
                       <node concept="3Tqbb2" id="3Wea0iDkPPj" role="1tU5fm">
-                        <ref role="ehGHo" to="lh0k:3Wea0iDhXIi" resolve="Flatmate" />
+                        <ref role="ehGHo" to="iqu7:3Wea0iDhXIi" resolve="Flatmate" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="3Wea0iDkPPk" role="3clF47">
