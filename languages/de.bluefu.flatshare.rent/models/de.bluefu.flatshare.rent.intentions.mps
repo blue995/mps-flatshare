@@ -9,6 +9,7 @@
     <import index="lh0k" ref="r:1ce11698-71a6-461f-9900-a7b29cea8951(de.bluefu.flatshare.rent.structure)" />
     <import index="k2g3" ref="r:f352e064-40c3-4e6a-a28e-5c083885ba65(de.bluefu.flatshare.rent.behavior)" />
     <import index="21zy" ref="r:9ded539c-cd06-4a2a-9f5d-15a9d146c781(de.bluefu.flatshare.runtime.utils)" />
+    <import index="kuxe" ref="r:a78330de-a7c7-4680-b2f5-bd0230b5c5ce(de.bluefu.flatshare.rent.utils)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,9 +112,9 @@
           </node>
         </node>
         <node concept="3clFbF" id="PHhY40NkJJ" role="3cqZAp">
-          <node concept="2YIFZM" id="PHhY40NopA" role="3clFbG">
-            <ref role="37wK5l" to="21zy:PHhY40MWUU" resolve="calculate" />
-            <ref role="1Pybhc" to="21zy:PHhY40MWRx" resolve="CalculatorUtils" />
+          <node concept="2YIFZM" id="24UESXRPrqz" role="3clFbG">
+            <ref role="37wK5l" to="kuxe:PHhY40MWUU" resolve="calculate" />
+            <ref role="1Pybhc" to="kuxe:PHhY40MWRx" resolve="CalculatorUtils" />
             <node concept="2Sf5sV" id="PHhY40NqHi" role="37wK5m" />
             <node concept="37vLTw" id="PHhY40NqK3" role="37wK5m">
               <ref role="3cqZAo" node="3Wea0iD_9kM" resolve="costCalculationStrategy" />

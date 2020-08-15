@@ -2,11 +2,16 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.cashbox/de.bluefu.flatshare.cashbox.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.common/de.bluefu.flatshare.common.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.date/de.bluefu.flatshare.date.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.flatmate/de.bluefu.flatshare.flatmate.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.np/de.bluefu.flatshare.np.mpl" folder="np" />
       <modulePath path="$PROJECT_DIR$/languages/de.bluefu.flatshare.rent/de.bluefu.flatshare.rent.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.bluefu.flatshare.build/de.bluefu.flatshare.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.bluefu.flatshare.build/de.bluefu.flatshare.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.bluefu.flatshare.np.runtime/de.bluefu.flatshare.np.runtime.msd" folder="np" />
       <modulePath path="$PROJECT_DIR$/solutions/de.bluefu.flatshare.runtime/de.bluefu.flatshare.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/test.de.bluefu.flatshare.date.ts/test.de.bluefu.flatshare.date.ts.msd" folder="tests" />
     </projectModules>
   </component>
 </project>

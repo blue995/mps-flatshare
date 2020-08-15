@@ -227,6 +227,9 @@
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
+      <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
+        <reference id="4278635856200794928" name="language" index="1Busuk" />
+      </concept>
       <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
@@ -714,6 +717,106 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="24UESXS3f7s" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.bluefu.flatshare.date" />
+        <property role="3LESm3" value="d7276e85-9c6a-4375-9222-f6d5de7547b8" />
+        <node concept="55IIr" id="24UESXS3f7v" role="3LF7KH">
+          <node concept="2Ry0Ak" id="24UESXS3f7y" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="24UESXS3f7_" role="2Ry0An">
+              <property role="2Ry0Am" value="de.bluefu.flatshare.date" />
+              <node concept="2Ry0Ak" id="24UESXS3f7C" role="2Ry0An">
+                <property role="2Ry0Am" value="de.bluefu.flatshare.date.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f7V" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f7W" role="1SiIV1">
+            <ref role="3bR37D" node="6tm$4dE_tji" resolve="de.bluefu.flatshare.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f7X" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f7Y" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f7Z" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f80" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f81" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f82" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="24UESXS3f87" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="24UESXS3f88" role="1HemKq">
+            <node concept="55IIr" id="24UESXS3f83" role="3LXTmr">
+              <node concept="2Ry0Ak" id="24UESXS3f84" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="24UESXS3f85" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.date" />
+                  <node concept="2Ry0Ak" id="24UESXS3f86" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="24UESXS3f89" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="24UESXS3f8a" role="1TViLv">
+          <property role="TrG5h" value="de.bluefu.flatshare.date#01" />
+          <property role="3LESm3" value="ee8f8921-eba1-46f2-b900-7d4182f8dd36" />
+          <node concept="1BupzO" id="24UESXS3f8g" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="24UESXS3f8h" role="1HemKq">
+              <node concept="55IIr" id="24UESXS3f8b" role="3LXTmr">
+                <node concept="2Ry0Ak" id="24UESXS3f8c" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="24UESXS3f8d" role="2Ry0An">
+                    <property role="2Ry0Am" value="de.bluefu.flatshare.date" />
+                    <node concept="2Ry0Ak" id="24UESXS3f8e" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="24UESXS3f8f" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="24UESXS3f8i" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="24UESXS3f8D" role="3bR31x">
+          <node concept="3LXTmp" id="24UESXS3f8E" role="3rtmxm">
+            <node concept="55IIr" id="24UESXS3f8F" role="3LXTmr">
+              <node concept="2Ry0Ak" id="24UESXS3f8G" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="24UESXS3f8H" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.date" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="24UESXS3f8J" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="6tm$4dE_tjc" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.bluefu.flatshare.rent" />
@@ -739,24 +842,9 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6tm$4dE_tkr" role="3bR37C">
-          <node concept="3bR9La" id="6tm$4dE_tks" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6tm$4dE_tkt" role="3bR37C">
           <node concept="3bR9La" id="6tm$4dE_tku" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6tm$4dE_tkv" role="3bR37C">
-          <node concept="3bR9La" id="6tm$4dE_tkw" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6tm$4dE_tkx" role="3bR37C">
-          <node concept="3bR9La" id="6tm$4dE_tky" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
           </node>
         </node>
         <node concept="1SiIV0" id="6tm$4dE_tkz" role="3bR37C">
@@ -858,11 +946,6 @@
             <ref role="3bR37D" node="6tm$4dE_tji" resolve="de.bluefu.flatshare.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="24UESXR$M2c" role="3bR37C">
-          <node concept="3bR9La" id="24UESXR$M2d" role="1SiIV1">
-            <ref role="3bR37D" node="24UESXR$M0U" resolve="de.bluefu.flatshare.flatmate" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="24UESXR$M2J" role="3bR37C">
           <node concept="3bR9La" id="24UESXR$M2K" role="1SiIV1">
             <ref role="3bR37D" node="24UESXR$M1A" resolve="de.bluefu.flatshare.common" />
@@ -881,6 +964,126 @@
             <node concept="3qWCbU" id="24UESXR$M34" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXRQn$J" role="3bR37C">
+          <node concept="1Busua" id="24UESXRQn$K" role="1SiIV1">
+            <ref role="1Busuk" node="24UESXR$M0U" resolve="de.bluefu.flatshare.flatmate" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="24UESXS3f6i" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.bluefu.flatshare.cashbox" />
+        <property role="3LESm3" value="46aaf015-9751-4158-913d-9e809febc49e" />
+        <node concept="55IIr" id="24UESXS3f6l" role="3LF7KH">
+          <node concept="2Ry0Ak" id="24UESXS3f6o" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="24UESXS3f6r" role="2Ry0An">
+              <property role="2Ry0Am" value="de.bluefu.flatshare.cashbox" />
+              <node concept="2Ry0Ak" id="24UESXS3f6u" role="2Ry0An">
+                <property role="2Ry0Am" value="de.bluefu.flatshare.cashbox.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f6U" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f6V" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f6W" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f6X" role="1SiIV1">
+            <ref role="3bR37D" node="6tm$4dE_tji" resolve="de.bluefu.flatshare.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f6Y" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f6Z" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f70" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f71" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f72" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f73" role="1SiIV1">
+            <ref role="3bR37D" node="24UESXR$M1A" resolve="de.bluefu.flatshare.common" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="24UESXS3f78" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="24UESXS3f79" role="1HemKq">
+            <node concept="55IIr" id="24UESXS3f74" role="3LXTmr">
+              <node concept="2Ry0Ak" id="24UESXS3f75" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="24UESXS3f76" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.cashbox" />
+                  <node concept="2Ry0Ak" id="24UESXS3f77" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="24UESXS3f7a" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f7b" role="3bR37C">
+          <node concept="1Busua" id="24UESXS3f7c" role="1SiIV1">
+            <ref role="1Busuk" node="24UESXR$M0U" resolve="de.bluefu.flatshare.flatmate" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="24UESXS3f7d" role="1TViLv">
+          <property role="TrG5h" value="de.bluefu.flatshare.cashbox#01" />
+          <property role="3LESm3" value="92d3677b-7b27-4eba-9148-4f4187c3eb5d" />
+          <node concept="1BupzO" id="24UESXS3f7j" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="24UESXS3f7k" role="1HemKq">
+              <node concept="55IIr" id="24UESXS3f7e" role="3LXTmr">
+                <node concept="2Ry0Ak" id="24UESXS3f7f" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="24UESXS3f7g" role="2Ry0An">
+                    <property role="2Ry0Am" value="de.bluefu.flatshare.cashbox" />
+                    <node concept="2Ry0Ak" id="24UESXS3f7h" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="24UESXS3f7i" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="24UESXS3f7l" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="24UESXS3f8K" role="3bR31x">
+          <node concept="3LXTmp" id="24UESXS3f8L" role="3rtmxm">
+            <node concept="55IIr" id="24UESXS3f8M" role="3LXTmr">
+              <node concept="2Ry0Ak" id="24UESXS3f8N" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="24UESXS3f8O" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.cashbox" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="24UESXS3f8Q" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="24UESXS3f9r" role="3bR37C">
+          <node concept="3bR9La" id="24UESXS3f9s" role="1SiIV1">
+            <ref role="3bR37D" node="24UESXS3f7s" resolve="de.bluefu.flatshare.date" />
           </node>
         </node>
       </node>
@@ -954,11 +1157,6 @@
             <node concept="3qWCbU" id="24UESXRvHXi" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6tm$4dE_v3A" role="3bR37C">
-          <node concept="3bR9La" id="6tm$4dE_v3B" role="1SiIV1">
-            <ref role="3bR37D" node="6tm$4dE_tjc" resolve="de.bluefu.flatshare.rent" />
           </node>
         </node>
       </node>

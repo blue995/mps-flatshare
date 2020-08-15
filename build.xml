@@ -385,6 +385,142 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.flatmate-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.flatmate-generator-templates" prefix="module/generator/templates" />
     </jar>
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.date.jar" />
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.date.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.bluefu.flatshare.date.jar/META-INF/module.xml">
+      <module namespace="de.bluefu.flatshare.date" type="language" uuid="d7276e85-9c6a-4375-9222-f6d5de7547b8">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="5f053482-19ad-4607-b413-50e195835a94(de.bluefu.flatshare.runtime)" kind="cl" />
+          <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.bluefu.flatshare.date-src.jar" descriptor="de.bluefu.flatshare.date.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/rentcalc/languages/rentcalc/de.bluefu.flatshare.date.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.bluefu.flatshare.date" />
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.bluefu.flatshare.date.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.date-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.date-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.bluefu.flatshare.date-generator.jar/META-INF/module.xml">
+      <module namespace="de.bluefu.flatshare.date#01" type="generator" uuid="ee8f8921-eba1-46f2-b900-7d4182f8dd36">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="d7276e85-9c6a-4375-9222-f6d5de7547b8(de.bluefu.flatshare.date)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.bluefu.flatshare.date-src.jar" descriptor="de.bluefu.flatshare.date.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/rentcalc/languages/rentcalc/de.bluefu.flatshare.date-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.bluefu.flatshare.date#01" />
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.bluefu.flatshare.date-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.date-models">
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.date-generator-templates">
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/rentcalc/languages/rentcalc/de.bluefu.flatshare.date-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.date/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.bluefu.flatshare.date/de.bluefu.flatshare.date.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.date-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.date-generator-templates" prefix="module/generator/templates" />
+    </jar>
     <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.rent.jar" />
     <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.rent.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.bluefu.flatshare.rent.jar/META-INF/module.xml">
@@ -410,15 +546,11 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
-          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
           <module ref="277ddfca-fc24-4794-864b-b51b607f65c4(de.bluefu.flatshare.common)" kind="cl" />
-          <module ref="bf04d5a4-b099-498c-bc91-e001c2db0b31(de.bluefu.flatshare.flatmate)" kind="cl" />
           <module ref="905d8a2b-6653-47b9-a6e2-b65ecb5de305(de.bluefu.flatshare.rent)" kind="cl" />
           <module ref="5f053482-19ad-4607-b413-50e195835a94(de.bluefu.flatshare.runtime)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
-          <module ref="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" kind="cl" />
-          <module ref="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
@@ -536,6 +668,144 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.rent-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.rent-generator-template" prefix="module/generator/template" />
     </jar>
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.cashbox.jar" />
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.cashbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.bluefu.flatshare.cashbox.jar/META-INF/module.xml">
+      <module namespace="de.bluefu.flatshare.cashbox" type="language" uuid="46aaf015-9751-4158-913d-9e809febc49e">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="277ddfca-fc24-4794-864b-b51b607f65c4(de.bluefu.flatshare.common)" kind="cl" />
+          <module ref="d7276e85-9c6a-4375-9222-f6d5de7547b8(de.bluefu.flatshare.date)" kind="cl" />
+          <module ref="5f053482-19ad-4607-b413-50e195835a94(de.bluefu.flatshare.runtime)" kind="cl" />
+          <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.bluefu.flatshare.cashbox-src.jar" descriptor="de.bluefu.flatshare.cashbox.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/rentcalc/languages/rentcalc/de.bluefu.flatshare.cashbox.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.bluefu.flatshare.cashbox" />
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.bluefu.flatshare.cashbox.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.cashbox-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.cashbox-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.bluefu.flatshare.cashbox-generator.jar/META-INF/module.xml">
+      <module namespace="de.bluefu.flatshare.cashbox#01" type="generator" uuid="92d3677b-7b27-4eba-9148-4f4187c3eb5d">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="46aaf015-9751-4158-913d-9e809febc49e(de.bluefu.flatshare.cashbox)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.bluefu.flatshare.cashbox-src.jar" descriptor="de.bluefu.flatshare.cashbox.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/rentcalc/languages/rentcalc/de.bluefu.flatshare.cashbox-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.bluefu.flatshare.cashbox#01" />
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.bluefu.flatshare.cashbox-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.cashbox-models">
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.cashbox-generator-templates">
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/rentcalc/languages/rentcalc/de.bluefu.flatshare.cashbox-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/de.bluefu.flatshare.cashbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/de.bluefu.flatshare.cashbox/de.bluefu.flatshare.cashbox.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.cashbox-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.bluefu.flatshare.cashbox-generator-templates" prefix="module/generator/templates" />
+    </jar>
     <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.runtime.jar" />
     <mkdir dir="${build.tmp}/default/de.bluefu.flatshare.runtime.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.bluefu.flatshare.runtime.jar/META-INF/module.xml">
@@ -552,7 +822,6 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
-          <module ref="905d8a2b-6653-47b9-a6e2-b65ecb5de305(de.bluefu.flatshare.rent)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
           <module ref="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" kind="cl" />
         </dependencies>
@@ -603,7 +872,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.de.bluefu.flatshare.common, java.compile.de.bluefu.flatshare.common#01, java.compile.de.bluefu.flatshare.flatmate, java.compile.de.bluefu.flatshare.flatmate#01, java.compile.java.modules.cycle.1, java.compile.de.bluefu.flatshare.rent, java.compile.de.bluefu.flatshare.rent#01, java.compile.de.bluefu.flatshare.runtime" />
+  <target name="compileJava" depends="java.compile.de.bluefu.flatshare.common, java.compile.de.bluefu.flatshare.common#01, java.compile.de.bluefu.flatshare.flatmate, java.compile.de.bluefu.flatshare.flatmate#01, java.compile.de.bluefu.flatshare.date, java.compile.de.bluefu.flatshare.date#01, java.compile.de.bluefu.flatshare.rent, java.compile.de.bluefu.flatshare.rent#01, java.compile.de.bluefu.flatshare.cashbox, java.compile.de.bluefu.flatshare.cashbox#01, java.compile.de.bluefu.flatshare.runtime" />
   
   <target name="processResources" />
   
@@ -728,7 +997,9 @@
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.refactoring.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.runtime.jar" />
       <chunk>
+        <module file="${basedir}/languages/de.bluefu.flatshare.cashbox/de.bluefu.flatshare.cashbox.mpl" />
         <module file="${basedir}/languages/de.bluefu.flatshare.common/de.bluefu.flatshare.common.mpl" />
+        <module file="${basedir}/languages/de.bluefu.flatshare.date/de.bluefu.flatshare.date.mpl" />
         <module file="${basedir}/languages/de.bluefu.flatshare.flatmate/de.bluefu.flatshare.flatmate.mpl" />
         <module file="${basedir}/languages/de.bluefu.flatshare.rent/de.bluefu.flatshare.rent.mpl" />
         <module file="${basedir}/solutions/de.bluefu.flatshare.runtime/de.bluefu.flatshare.runtime.msd" />
@@ -946,13 +1217,67 @@
     </javac>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.de.bluefu.flatshare.common, java.compile.de.bluefu.flatshare.flatmate, fetchDependencies">
-    <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
+  <target name="java.compile.de.bluefu.flatshare.date" depends="java.compile.de.bluefu.flatshare.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.bluefu.flatshare.date/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.date" />
+    <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.date" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/de.bluefu.flatshare.rent/source_gen" />
-        <path location="${basedir}/solutions/de.bluefu.flatshare.runtime/source_gen" />
+        <path location="${basedir}/languages/de.bluefu.flatshare.date/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.runtime" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.13.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.bluefu.flatshare.date#01" depends="java.compile.de.bluefu.flatshare.date, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.bluefu.flatshare.date/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.date#01" />
+    <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.date#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.bluefu.flatshare.date/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
@@ -982,31 +1307,20 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.date" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.13.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.common" />
-        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.flatmate" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.de.bluefu.flatshare.rent" depends="java.compile.de.bluefu.flatshare.common, java.compile.de.bluefu.flatshare.flatmate, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.de.bluefu.flatshare.rent" depends="java.compile.de.bluefu.flatshare.common, java.compile.de.bluefu.flatshare.flatmate, java.compile.de.bluefu.flatshare.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.bluefu.flatshare.rent/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.rent" />
     <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.rent" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1044,6 +1358,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.common" />
         <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.flatmate" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.runtime" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
@@ -1051,23 +1366,17 @@
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.13.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.de.bluefu.flatshare.rent#01" depends="java.compile.de.bluefu.flatshare.rent, fetchDependencies">
+  <target name="java.compile.de.bluefu.flatshare.rent#01" depends="java.compile.de.bluefu.flatshare.flatmate, java.compile.de.bluefu.flatshare.rent, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.bluefu.flatshare.rent/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.rent#01" />
     <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.rent#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1082,7 +1391,9 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
@@ -1101,6 +1412,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.flatmate" />
         <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.rent" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
@@ -1114,13 +1426,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.de.bluefu.flatshare.runtime" depends="java.compile.java.modules.cycle.1, fetchDependencies">
-    <mkdir dir="${basedir}/solutions/de.bluefu.flatshare.runtime/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.runtime" />
-    <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.de.bluefu.flatshare.cashbox" depends="java.compile.de.bluefu.flatshare.common, java.compile.de.bluefu.flatshare.date, java.compile.de.bluefu.flatshare.flatmate, java.compile.de.bluefu.flatshare.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.bluefu.flatshare.cashbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.cashbox" />
+    <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.cashbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/de.bluefu.flatshare.runtime/source_gen" />
+        <path location="${basedir}/languages/de.bluefu.flatshare.cashbox/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
@@ -1129,7 +1441,9 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
@@ -1148,8 +1462,105 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.common" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.date" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.flatmate" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.runtime" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.13.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.bluefu.flatshare.cashbox#01" depends="java.compile.de.bluefu.flatshare.cashbox, java.compile.de.bluefu.flatshare.flatmate, fetchDependencies">
+    <mkdir dir="${basedir}/languages/de.bluefu.flatshare.cashbox/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.cashbox#01" />
+    <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.cashbox#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/de.bluefu.flatshare.cashbox/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.cashbox" />
+        <pathelement path="${build.tmp}/java/out/de.bluefu.flatshare.flatmate" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.13.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.bluefu.flatshare.runtime" depends="fetchDependencies">
+    <mkdir dir="${basedir}/solutions/de.bluefu.flatshare.runtime/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.bluefu.flatshare.runtime" />
+    <javac destdir="${build.tmp}/java/out/de.bluefu.flatshare.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/de.bluefu.flatshare.runtime/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
@@ -1159,14 +1570,17 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
   
   <target name="cleanSources">
+    <delete dir="${basedir}/languages/de.bluefu.flatshare.cashbox/source_gen" />
+    <delete dir="${basedir}/languages/de.bluefu.flatshare.cashbox/generator/source_gen" />
     <delete dir="${basedir}/languages/de.bluefu.flatshare.common/source_gen" />
     <delete dir="${basedir}/languages/de.bluefu.flatshare.common/generator/source_gen" />
+    <delete dir="${basedir}/languages/de.bluefu.flatshare.date/source_gen" />
+    <delete dir="${basedir}/languages/de.bluefu.flatshare.date/generator/source_gen" />
     <delete dir="${basedir}/languages/de.bluefu.flatshare.flatmate/source_gen" />
     <delete dir="${basedir}/languages/de.bluefu.flatshare.flatmate/generator/source_gen" />
     <delete dir="${basedir}/languages/de.bluefu.flatshare.rent/source_gen" />

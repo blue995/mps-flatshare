@@ -179,6 +179,9 @@
     <node concept="PrWs8" id="3Wea0iDhKyu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="24UESXRM_7S" role="PzmwI">
+      <ref role="PrY4T" to="iqu7:24UESXRMzpU" resolve="IProvideFlatmates" />
+    </node>
     <node concept="1TJgyj" id="3Wea0iDhLjJ" role="1TKVEi">
       <property role="IQ2ns" value="4543613074548397295" />
       <property role="20kJfa" value="flat" />

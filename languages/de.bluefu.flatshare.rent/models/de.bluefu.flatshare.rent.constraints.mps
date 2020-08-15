@@ -9,7 +9,7 @@
     <import index="lh0k" ref="r:1ce11698-71a6-461f-9900-a7b29cea8951(de.bluefu.rent.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="iqu7" ref="r:0f1369b8-a8b7-4a36-b679-d0023844a4d3(de.bluefu.flatshare.flatmate.structure)" />
-    <import index="k2g3" ref="r:f352e064-40c3-4e6a-a28e-5c083885ba65(de.bluefu.flatshare.rent.behavior)" implicit="true" />
+    <import index="lcv1" ref="r:9964a4b5-51ea-4496-af5e-529fffa1fbe1(de.bluefu.flatshare.flatmate.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -228,8 +228,8 @@
                 <node concept="37vLTw" id="24UESXRDLbW" role="2Oq$k0">
                   <ref role="3cqZAo" node="3Wea0iDkMbD" resolve="rentSpec" />
                 </node>
-                <node concept="2qgKlT" id="24UESXRDM1r" role="2OqNvi">
-                  <ref role="37wK5l" to="k2g3:24UESXRDIEG" resolve="getFlatmates" />
+                <node concept="2qgKlT" id="24UESXRMHFr" role="2OqNvi">
+                  <ref role="37wK5l" to="lcv1:24UESXRMzq6" resolve="getFlatmates" />
                 </node>
               </node>
             </node>

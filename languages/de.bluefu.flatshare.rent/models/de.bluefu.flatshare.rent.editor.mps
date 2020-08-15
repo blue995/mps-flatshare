@@ -12,19 +12,15 @@
     <import index="k2g3" ref="r:f352e064-40c3-4e6a-a28e-5c083885ba65(de.bluefu.rent.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="21zy" ref="r:9ded539c-cd06-4a2a-9f5d-15a9d146c781(de.bluefu.flatshare.runtime.utils)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="tp4k" ref="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="odki" ref="r:4f756080-255d-4847-8e52-fbe6d6166293(de.bluefu.flatshare.common.editor)" />
+    <import index="kuxe" ref="r:a78330de-a7c7-4680-b2f5-bd0230b5c5ce(de.bluefu.flatshare.rent.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="lcv1" ref="r:9964a4b5-51ea-4496-af5e-529fffa1fbe1(de.bluefu.flatshare.flatmate.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -148,7 +144,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -266,7 +261,6 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -1389,14 +1383,11 @@
                           <node concept="2YIFZM" id="3Wea0iDwVcC" role="3cqZAk">
                             <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
                             <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                            <node concept="2OqwBi" id="3Wea0iDwSkG" role="37wK5m">
-                              <node concept="2OqwBi" id="3Wea0iDwPdX" role="2Oq$k0">
-                                <node concept="pncrf" id="3Wea0iDwOZ7" role="2Oq$k0" />
-                                <node concept="2qgKlT" id="24UESXRE0st" role="2OqNvi">
-                                  <ref role="37wK5l" to="k2g3:24UESXRDIEG" resolve="getFlatmates" />
-                                </node>
+                            <node concept="2OqwBi" id="3Wea0iDwPdX" role="37wK5m">
+                              <node concept="pncrf" id="3Wea0iDwOZ7" role="2Oq$k0" />
+                              <node concept="2qgKlT" id="24UESXRMGpB" role="2OqNvi">
+                                <ref role="37wK5l" to="lcv1:24UESXRMF7G" resolve="getFlatmateCount" />
                               </node>
-                              <node concept="34oBXx" id="3Wea0iDwUun" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -1544,27 +1535,15 @@
                     <node concept="1HfYo3" id="22mkiEbYUEt" role="1HlULh">
                       <node concept="3TQlhw" id="22mkiEbYUEv" role="1Hhtcw">
                         <node concept="3clFbS" id="22mkiEbYUEx" role="2VODD2">
-                          <node concept="3cpWs8" id="22mkiEbZakx" role="3cqZAp">
-                            <node concept="3cpWsn" id="22mkiEbZaky" role="3cpWs9">
-                              <property role="TrG5h" value="i" />
-                              <node concept="10Oyi0" id="22mkiEbZakt" role="1tU5fm" />
-                              <node concept="2OqwBi" id="22mkiEbZakz" role="33vP2m">
-                                <node concept="2OqwBi" id="22mkiEbZak$" role="2Oq$k0">
-                                  <node concept="pncrf" id="22mkiEbZak_" role="2Oq$k0" />
-                                  <node concept="2qgKlT" id="24UESXRE0EB" role="2OqNvi">
-                                    <ref role="37wK5l" to="k2g3:24UESXRDIEG" resolve="getFlatmates" />
-                                  </node>
-                                </node>
-                                <node concept="34oBXx" id="22mkiEbZakB" role="2OqNvi" />
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3cpWs6" id="22mkiEbZb0M" role="3cqZAp">
                             <node concept="2YIFZM" id="22mkiEbZboM" role="3cqZAk">
                               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                               <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-                              <node concept="37vLTw" id="22mkiEbZb_B" role="37wK5m">
-                                <ref role="3cqZAo" node="22mkiEbZaky" resolve="i" />
+                              <node concept="2OqwBi" id="22mkiEbZak$" role="37wK5m">
+                                <node concept="pncrf" id="22mkiEbZak_" role="2Oq$k0" />
+                                <node concept="2qgKlT" id="24UESXRMGLu" role="2OqNvi">
+                                  <ref role="37wK5l" to="lcv1:24UESXRMF7G" resolve="getFlatmateCount" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1786,9 +1765,9 @@
                                         <node concept="1QHqEC" id="PHhY40VV67" role="1QHqEI">
                                           <node concept="3clFbS" id="PHhY40VV69" role="1bW5cS">
                                             <node concept="3clFbF" id="PHhY40Nt5w" role="3cqZAp">
-                                              <node concept="2YIFZM" id="PHhY40Nt6F" role="3clFbG">
-                                                <ref role="1Pybhc" to="21zy:PHhY40MWRx" resolve="CalculatorUtils" />
-                                                <ref role="37wK5l" to="21zy:PHhY40MWUU" resolve="calculate" />
+                                              <node concept="2YIFZM" id="24UESXRPrqy" role="3clFbG">
+                                                <ref role="37wK5l" to="kuxe:PHhY40MWUU" resolve="calculate" />
+                                                <ref role="1Pybhc" to="kuxe:PHhY40MWRx" resolve="CalculatorUtils" />
                                                 <node concept="pncrf" id="PHhY40Ntfe" role="37wK5m" />
                                                 <node concept="37vLTw" id="PHhY40Nxqo" role="37wK5m">
                                                   <ref role="3cqZAo" node="PHhY40Nvji" resolve="costCalculationStrategy" />
