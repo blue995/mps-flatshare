@@ -17,10 +17,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
-        <child id="1224071154657" name="classifierType" index="0kSFW" />
-        <child id="1224071154656" name="expression" index="0kSFX" />
-      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -133,7 +129,9 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="6995935425733782641" name="jetbrains.mps.lang.smodel.structure.Model_GetModule" flags="nn" index="13u695" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -261,32 +259,20 @@
         <node concept="H_c77" id="PHhY41oiKr" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="PHhY41ohsm" role="3clF47">
-        <node concept="3cpWs8" id="PHhY41ohtV" role="3cqZAp">
-          <node concept="3cpWsn" id="PHhY41ohtW" role="3cpWs9">
-            <property role="TrG5h" value="module" />
-            <node concept="3Tqbb2" id="PHhY41ohtX" role="1tU5fm">
-              <ref role="ehGHo" to="hypd:5xDtKQA7vSu" resolve="Module" />
-            </node>
-            <node concept="2OqwBi" id="PHhY41ohtY" role="33vP2m">
-              <node concept="37vLTw" id="PHhY41oiV2" role="2Oq$k0">
-                <ref role="3cqZAo" node="PHhY41ohZK" resolve="model" />
-              </node>
-              <node concept="13u695" id="PHhY41ohu2" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="PHhY41ohu3" role="3cqZAp">
           <node concept="3cpWsn" id="PHhY41ohu4" role="3cpWs9">
             <property role="TrG5h" value="smodule" />
             <node concept="3uibUv" id="PHhY41ohu5" role="1tU5fm">
               <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
             </node>
-            <node concept="0kSF2" id="PHhY41ohu6" role="33vP2m">
-              <node concept="3uibUv" id="PHhY41ohu7" role="0kSFW">
-                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+            <node concept="2OqwBi" id="3vUUNkVMw0e" role="33vP2m">
+              <node concept="liA8E" id="3vUUNkVMwlP" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getModule()" resolve="getModule" />
               </node>
-              <node concept="37vLTw" id="PHhY41ohu8" role="0kSFX">
-                <ref role="3cqZAo" node="PHhY41ohtW" resolve="module" />
+              <node concept="2JrnkZ" id="3vUUNkVMw0j" role="2Oq$k0">
+                <node concept="37vLTw" id="3vUUNkVMvSY" role="2JrQYb">
+                  <ref role="3cqZAo" node="PHhY41ohZK" resolve="model" />
+                </node>
               </node>
             </node>
           </node>
