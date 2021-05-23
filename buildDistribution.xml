@@ -9,6 +9,10 @@
   <property file="${artifacts.rentcalc}/build.properties" prefix="import.rentcalc" />
   <property name="rentcalc.date" value="${import.rentcalc.rentcalc.date}" />
   <property name="rentcalc.build.number" value="${import.rentcalc.rentcalc.build.number}" />
+  <property name="mpsBootstrapCore.version.major" value="${import.rentcalc.mpsBootstrapCore.version.major}" />
+  <property name="mpsBootstrapCore.version.minor" value="${import.rentcalc.mpsBootstrapCore.version.minor}" />
+  <property name="mpsBootstrapCore.version.bugfixNr" value="${import.rentcalc.mpsBootstrapCore.version.bugfixNr}" />
+  <property name="mpsBootstrapCore.version.eap" value="${import.rentcalc.mpsBootstrapCore.version.eap}" />
   <property name="mpsBootstrapCore.version" value="${import.rentcalc.mpsBootstrapCore.version}" />
   
   <target name="assemble" depends="fetchDependencies">
@@ -16,20 +20,20 @@
     <mkdir dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.tar.gz" />
     <mkdir dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.tar.gz/bin" />
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc.vmoptions" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc64.vmoptions" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.tar.gz_f755" />
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.tar.gz_f755">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc.sh" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -43,14 +47,14 @@
     <mkdir dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.win.zip" />
     <mkdir dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.win.zip/bin" />
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc.vmoptions" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc.vmoptions" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
       <globmapper from="*" to="rentcalc.exe.vmoptions" />
     </copy>
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc64.vmoptions" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc64.vmoptions" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
@@ -58,7 +62,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.win.zip_f755" />
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.win.zip_f755">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc.bat" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc.bat" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
@@ -85,7 +89,7 @@
       <globmapper from="*" to="rentcalc" />
     </copy>
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.macos.zip/rentcalc ${version}.app/Contents">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/Info.plist.xml" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/Info.plist.xml" />
       <filterchain>
         <tokenfilter>
           <replaceregex pattern="\$version\$" replace="${version}" flags="" />
@@ -108,7 +112,7 @@
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.macos.zip/rentcalc ${version}.app/Contents/bin">
-      <fileset file="${basedir}/solutions/de.bluefu.rent.build/source_gen/de/bluefu/rent/build/rentcalc64.vmoptions" />
+      <fileset file="${basedir}/solutions/de.bluefu.flatshare.build/source_gen/de/bluefu/flatshare/build/rentcalc64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -128,7 +132,7 @@
       <zipfileset dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.macos.zip_f7551" filemode="755" prefix="rentcalc ${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/rentcalc-_dl__lbrace_build.number_rbrace_.macos.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">rentcalcDistribution.version=${version}${line.separator}rentcalc.date=${rentcalc.date}${line.separator}rentcalc.build.number=${rentcalc.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">rentcalcDistribution.version=${version}${line.separator}rentcalc.date=${rentcalc.date}${line.separator}rentcalc.build.number=${rentcalc.build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents">

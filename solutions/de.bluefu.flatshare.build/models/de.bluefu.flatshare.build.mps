@@ -1210,7 +1210,7 @@
               <node concept="2Ry0Ak" id="6tm$4dE_tln" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6tm$4dE_tlo" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tlp" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tlq" role="2Ry0An">
@@ -1218,7 +1218,7 @@
                       <node concept="2Ry0Ak" id="6tm$4dE_tlr" role="2Ry0An">
                         <property role="2Ry0Am" value="bluefu" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tls" role="2Ry0An">
-                          <property role="2Ry0Am" value="rent" />
+                          <property role="2Ry0Am" value="flatshare" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tlt" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tlu" role="2Ry0An">
@@ -1242,7 +1242,7 @@
               <node concept="2Ry0Ak" id="6tm$4dE_tlv" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6tm$4dE_tlw" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tlx" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tly" role="2Ry0An">
@@ -1250,7 +1250,7 @@
                       <node concept="2Ry0Ak" id="6tm$4dE_tlz" role="2Ry0An">
                         <property role="2Ry0Am" value="bluefu" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tl$" role="2Ry0An">
-                          <property role="2Ry0Am" value="rent" />
+                          <property role="2Ry0Am" value="flatshare" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tl_" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tlA" role="2Ry0An">
@@ -1278,7 +1278,7 @@
               <node concept="2Ry0Ak" id="6tm$4dE_tlB" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6tm$4dE_tlC" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tlD" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tlE" role="2Ry0An">
@@ -1286,7 +1286,7 @@
                       <node concept="2Ry0Ak" id="6tm$4dE_tlF" role="2Ry0An">
                         <property role="2Ry0Am" value="bluefu" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tlG" role="2Ry0An">
-                          <property role="2Ry0Am" value="rent" />
+                          <property role="2Ry0Am" value="flatshare" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tlH" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tlI" role="2Ry0An">
@@ -1346,7 +1346,7 @@
               <node concept="2Ry0Ak" id="6tm$4dE_tmP" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6tm$4dE_tmQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tmR" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tmS" role="2Ry0An">
@@ -1354,7 +1354,7 @@
                       <node concept="2Ry0Ak" id="6tm$4dE_tmT" role="2Ry0An">
                         <property role="2Ry0Am" value="bluefu" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tmU" role="2Ry0An">
-                          <property role="2Ry0Am" value="rent" />
+                          <property role="2Ry0Am" value="flatshare" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tmV" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tmW" role="2Ry0An">
@@ -1385,7 +1385,7 @@
               <node concept="2Ry0Ak" id="6tm$4dE_tn3" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6tm$4dE_tn4" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tn5" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tn6" role="2Ry0An">
@@ -1393,7 +1393,7 @@
                       <node concept="2Ry0Ak" id="6tm$4dE_tn7" role="2Ry0An">
                         <property role="2Ry0Am" value="bluefu" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tn8" role="2Ry0An">
-                          <property role="2Ry0Am" value="rent" />
+                          <property role="2Ry0Am" value="flatshare" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tn9" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tna" role="2Ry0An">
@@ -1463,7 +1463,7 @@
               <node concept="2Ry0Ak" id="6tm$4dE_tlJ" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6tm$4dE_tlK" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                  <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tlL" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tlM" role="2Ry0An">
@@ -1471,7 +1471,7 @@
                       <node concept="2Ry0Ak" id="6tm$4dE_tlN" role="2Ry0An">
                         <property role="2Ry0Am" value="bluefu" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tlO" role="2Ry0An">
-                          <property role="2Ry0Am" value="rent" />
+                          <property role="2Ry0Am" value="flatshare" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tlP" role="2Ry0An">
                             <property role="2Ry0Am" value="build" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tlQ" role="2Ry0An">
@@ -1604,7 +1604,7 @@
                 <node concept="2Ry0Ak" id="6tm$4dE_tlR" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
                   <node concept="2Ry0Ak" id="6tm$4dE_tlS" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                    <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tlT" role="2Ry0An">
                       <property role="2Ry0Am" value="source_gen" />
                       <node concept="2Ry0Ak" id="6tm$4dE_tlU" role="2Ry0An">
@@ -1612,7 +1612,7 @@
                         <node concept="2Ry0Ak" id="6tm$4dE_tlV" role="2Ry0An">
                           <property role="2Ry0Am" value="bluefu" />
                           <node concept="2Ry0Ak" id="6tm$4dE_tlW" role="2Ry0An">
-                            <property role="2Ry0Am" value="rent" />
+                            <property role="2Ry0Am" value="flatshare" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tlX" role="2Ry0An">
                               <property role="2Ry0Am" value="build" />
                               <node concept="2Ry0Ak" id="6tm$4dE_tlY" role="2Ry0An">
@@ -1739,7 +1739,7 @@
                   <node concept="2Ry0Ak" id="6tm$4dE_tp1" role="iGT6I">
                     <property role="2Ry0Am" value="solutions" />
                     <node concept="2Ry0Ak" id="6tm$4dE_tp2" role="2Ry0An">
-                      <property role="2Ry0Am" value="de.bluefu.rent.build" />
+                      <property role="2Ry0Am" value="de.bluefu.flatshare.build" />
                       <node concept="2Ry0Ak" id="6tm$4dE_tp3" role="2Ry0An">
                         <property role="2Ry0Am" value="source_gen" />
                         <node concept="2Ry0Ak" id="6tm$4dE_tp4" role="2Ry0An">
@@ -1747,7 +1747,7 @@
                           <node concept="2Ry0Ak" id="6tm$4dE_tp5" role="2Ry0An">
                             <property role="2Ry0Am" value="bluefu" />
                             <node concept="2Ry0Ak" id="6tm$4dE_tp6" role="2Ry0An">
-                              <property role="2Ry0Am" value="rent" />
+                              <property role="2Ry0Am" value="flatshare" />
                               <node concept="2Ry0Ak" id="6tm$4dE_tp7" role="2Ry0An">
                                 <property role="2Ry0Am" value="build" />
                                 <node concept="2Ry0Ak" id="6tm$4dE_tp8" role="2Ry0An">

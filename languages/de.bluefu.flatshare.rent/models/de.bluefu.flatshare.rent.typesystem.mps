@@ -139,6 +139,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
@@ -152,7 +155,7 @@
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
-        <reference id="1182511038750" name="concept" index="1j9C0d" />
+        <child id="6750920497477143623" name="conceptArgument" index="3MHPCF" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -495,7 +498,9 @@
                 <node concept="I4A8Y" id="7QUs3It1R4U" role="2OqNvi" />
               </node>
               <node concept="1j9C0f" id="7QUs3It1R4V" role="2OqNvi">
-                <ref role="1j9C0d" to="lh0k:3Wea0iDedki" resolve="FlatSpecification" />
+                <node concept="chp4Y" id="3GafsazXPxz" role="3MHPCF">
+                  <ref role="cht4Q" to="lh0k:3Wea0iDedki" resolve="FlatSpecification" />
+                </node>
               </node>
             </node>
             <node concept="1v1jN8" id="7QUs3It1R4W" role="2OqNvi" />
